@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>movie search app</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css" integrity="sha512-2SwdPD6INVrV/lHTZbO2nodKhrnDdJK9/kg2XD1r9uGqPo1cUbujc+IYdlYdEErWNu69gVcYgdxlmVmzTWnetw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+   
+     <header class="header">
+        <div class="container">
+          <div class="display">
+            <div class="logo">
+                sm<span class="logocolor">DB.</span>
+            </div>
+            <div class="wrapper">
+                <img src="./assets/images/sun-1.svg" alt="">
+                <div class="toogle">
+                    <label class="switch">
+                        <input type="checkbox" >
+                        <span class="slider round"></span>
+                      </label>
+                </div>
+                <img src="./assets/images/moon.svg" alt="">
+            </div>
+          </div>
+        </div>
+    </header>
+
+    <div class="searcharea">
+        <div class="container">
+            <h2 class="searchHeading">Search <span>Movie</span></h2>
+            
+            <div class="search-wrapper">
+                <div class="search-input-container">
+                  <img src="./assets/images/search.svg" alt=""class="search-icon">
+                    <input 
+                        type="text" 
+                        class="search-input" 
+                        id="searchInput"
+                        placeholder="Search Movie Title..."
+                        autocomplete="off"
+                    >
+                </div>
+                
+                <div class="search-dropdown" id="searchDropdown"></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="movie-details" id="movieDetails">
+        <div class="container">
+            <div class="movie-card" id="movieCard"></div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
